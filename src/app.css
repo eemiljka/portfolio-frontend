@@ -1,3 +1,49 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: 'anonymous';
+    src: url(/fonts/AnonymousPro-Regular.ttf);
+}
+
+* {
+    font-family: 'anonymous';
+}
+
+body {
+    /* Creating a radial gradient background */
+    background: radial-gradient(circle, #7d3232, #3b67f8d1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    
+    
+}
+
+h1 {
+    font-size: xx-large;
+    color: white;
+}
+
+li {
+    font-size: x-small;
+    color: white;
+}
+
+h2 {
+    font-size: x-large;
+    color: white;
+}
+
+h3 {
+    font-size: large;
+    color: white;
+}
+
+p {
+    font-size: small;
+    color: white;
+}
+
