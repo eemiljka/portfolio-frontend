@@ -34,29 +34,38 @@
     })
 
     onMount(() => {
+        animate("#projectstitle", {opacity: [0, 1], y: [-20, 0] }, {duration: 1.5, delay: 1.75})
+    })
+
+    onMount(() => {
         observeProjects();
     });
+    
+    
 </script>
 <div class="body">
     <div class="top">
         <div class="namepart">
-        <h1 id="firstname">Eemil</h1>
-        <h1 id="middlename">Juhani</h1>
-        <h1 id="lastname">Kärkkäinen</h1>
+        <h1 id="firstname">EEMIL</h1>
+        <h1 id="middlename">JUHANI</h1>
+        <h1 id="lastname">KÄRKKÄINEN</h1>
         <h1 id="at">@</h1>
         <h1 id="tilde">~/</h1>
         </div>
 
-        
+
         <ul class="top-child">
-            <li id="list-item-two">SKILLS & EXPERIENCE</li>
-            <li id="list-item-one">ABOUT ME</li>
+            <li id="list-item-two"><a href="#">SKILLS & EXPERIENCE</a></li>
+            <li id="list-item-one"><a href="#">ABOUT ME</a></li>
         </ul>
+
     </div>
+
+
 
     <div class="vertical-line"></div>
 
-    <h2>Projects/</h2>
+    <h2 id="projectstitle">PROJECTS/</h2>
 
     <div class="vertical-line2"></div>
     <div class="horizontal-line2"></div>
