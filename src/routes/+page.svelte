@@ -8,17 +8,17 @@
 </script>
 <div class="body">
 <div class="top">
-<h1 class="top-child">EEMIL JUHANI KÄRKKÄINEN</h1>
+<h1 class="top-child">Eemil Juhani Kärkkäinen @ ~/</h1>
 
 <ul class="top-child">
     <li>ABOUT ME</li>
-    <li>RESUME</li>
+    <li>SKILLS & EXPERIENCE</li>
 </ul>
 </div>
 
 <div class="vertical-line"></div>
 
-<h2>PROJECTS</h2>
+<h2>Projects/</h2>
 
 <div class="vertical-line2"></div>
 <div class="horizontal-line2"></div>
