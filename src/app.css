@@ -11,15 +11,35 @@
     font-family: 'anonymous';
 }
 
+.body {
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 body {
     /* Creating a radial gradient background */
     background: radial-gradient(circle, #7d3232, #3b67f8d1);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 250vh;
     margin: 0;
     
     
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-child {
+    margin: 0; 
+    list-style: none; 
+    display: flex; 
+    gap: 1rem; 
+    padding: 100px 100px;
 }
 
 h1 {
@@ -30,20 +50,138 @@ h1 {
 li {
     font-size: x-small;
     color: white;
+    
+}
+
+.vertical-line {
+    position: absolute;
+    left: 21.5%;
+    top: 200px;
+    width: 1px;
+    height: 100%;
+    background-color: white;
+    transform: translateX(-50%);
+    z-index: -1;
 }
 
 h2 {
     font-size: x-large;
     color: white;
+    padding: 100px 200px;
 }
 
 h3 {
     font-size: large;
     color: white;
+    padding: 100px 100px;
+}
+
+h4 {
+    font-size: large;
+    color: white;
+    padding: 50px 100px;
 }
 
 p {
     font-size: small;
     color: white;
+    padding: 50px 100px;
 }
 
+.project-image {
+    padding: 50px 100px;
+}
+
+
+
+.project-one {
+    display: flex;
+    align-items: center;
+}
+
+#project-one-text {
+    width: 30%;
+}
+
+.project-two {
+    display: flex;
+    align-items: center;
+}
+
+#project-two-text {
+    width: 90%;
+    height: 100%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    } to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.project {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.projects {
+    padding: 0 200px;
+}
+
+.project.show {
+    opacity: 1;
+    transform: scale(1);
+}
+/* RESPONSIVENESS */
+@media (max-width: 2246px) {
+    .vertical-line {
+        left: 22%;
+    }
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1760px) {
+    .vertical-line {
+        left: 23%;
+    }
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1600px) {
+    .vertical-line {
+        left: 23%;
+    }
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1352px) {
+    .vertical-line {
+        left: 24%;
+    }
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1200px) {
+    .vertical-line {
+        left: 25%;
+    }
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 900px) {
+    .vertical-line {
+        left: 28%;
+    }
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 600px) {
+    .vertical-line {
+        left: 30%;
+    }
+}
