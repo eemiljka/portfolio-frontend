@@ -17,6 +17,7 @@
 </div>
 
 <div class="vertical-line"></div>
+<div class="horizontal-line"></div>
 
 <h2>PROJECTS</h2>
 

@@ -17,6 +17,37 @@
     margin-right: auto;
 }
 
+/* ✅ Make the body wider as the screen gets smaller */
+@media (max-width: 1600px) {
+    .body {
+        width: 75vw;
+    }
+}
+
+@media (max-width: 1352px) {
+    .body {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .body {
+        width: 85vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .body {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .body {
+        width: 95vw;
+    }
+}
+
 body {
     /* Creating a radial gradient background */
     background: radial-gradient(circle, #7d3232, #3b67f8d1);
@@ -60,7 +91,16 @@ li {
     width: 1px;
     height: 100%;
     background-color: white;
-    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.horizontal-line {
+    position: absolute;
+    left: 21.5%;
+    top: 365px;
+    width: 50px;
+    height: 1px;
+    background-color: white;
     z-index: -1;
 }
 
@@ -142,11 +182,17 @@ p {
     .vertical-line {
         left: 22%;
     }
+    .horizontal-line {
+        left: 22%;
+    }
 }
 
 /* RESPONSIVENESS */
 @media (max-width: 1760px) {
     .vertical-line {
+        left: 23%;
+    }
+    .horizontal-line {
         left: 23%;
     }
 }
@@ -156,11 +202,17 @@ p {
     .vertical-line {
         left: 23%;
     }
+    .horizontal-line {
+        left: 23%;
+    }
 }
 
 /* RESPONSIVENESS */
 @media (max-width: 1352px) {
     .vertical-line {
+        left: 24%;
+    }
+    .horizontal-line {
         left: 24%;
     }
 }
@@ -170,6 +222,9 @@ p {
     .vertical-line {
         left: 25%;
     }
+    .horizontal-line {
+        left: 25%;
+    }
 }
 
 /* RESPONSIVENESS */
@@ -177,11 +232,17 @@ p {
     .vertical-line {
         left: 28%;
     }
+    .horizontal-line {
+        left: 28%;
+    }
 }
 
 /* RESPONSIVENESS */
 @media (max-width: 600px) {
     .vertical-line {
+        left: 30%;
+    }
+    .horizontal-line {
         left: 30%;
     }
 }
