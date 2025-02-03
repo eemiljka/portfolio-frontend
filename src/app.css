@@ -7,6 +7,12 @@
     src: url(/fonts/AnonymousPro-Regular.ttf);
 }
 
+/* Alternative font */
+@font-face {
+    font-family: 'montagus';
+    src: url(/fonts/MontaguSlab_120pt-Light.ttf);
+}
+
 * {
     font-family: 'anonymous';
 }
@@ -20,7 +26,7 @@
 
 body {
     /* Creating a radial gradient background */
-    background: radial-gradient(circle, #7d3232, #3b67f8d1);
+    background: radial-gradient(circle, #7d3232, #1436a5cd);
     background-repeat: no-repeat;
     background-size: cover;
     height: 300vh;
