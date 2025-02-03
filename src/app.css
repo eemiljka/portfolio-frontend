@@ -188,6 +188,14 @@ p {
     transform: scale(1);
 }
 
+.my-tech-stack {
+    padding-left: 100px;
+    padding-bottom: 100px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* RESPONSIVENESS */
 
 @media (max-width: 2468px) {
