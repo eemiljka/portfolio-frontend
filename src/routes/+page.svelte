@@ -1,7 +1,8 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import { observeProjects } from "$lib/utils";
-    import {animate } from "motion";
+    import {animate, delay } from "motion";
+	import { fade } from "svelte/transition";
 	
 
     // Animations
@@ -40,6 +41,13 @@
     onMount(() => {
         observeProjects();
     });
+
+    // Fade transition from svelte/transition
+    let showFade = false;
+
+    function toggleFade() {
+        showFade = !showFade;
+    }
     
     
 </script>
@@ -55,13 +63,14 @@
 
 
         <ul class="top-child">
-            <li id="list-item-two"><a href="/skills-and-experience">SKILLS & EXPERIENCE</a></li>
-            <li id="list-item-one"><a href="#">ABOUT ME</a></li>
+            <li id="list-item-two"><button type="button" on:click={toggleFade}><a href="/skills-and-experience">SKILLS & EXPERIENCE</a></button></li>
+            <li id="list-item-one"><button type="button" on:click={toggleFade}><a href="/about">ABOUT ME</a></button></li>
         </ul>
 
     </div>
 
 
+    <blockquote transition:fade={{delay: 250, duration: 300}}>
 
     <div class="vertical-line"></div>
 
@@ -108,4 +117,6 @@
             </div>
         </div>
     </div>
+</blockquote>
 </div>
+

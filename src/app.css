@@ -176,6 +176,18 @@ p {
     opacity: 1;
     transform: scale(1);
 }
+
+.wrapper {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 1s ease-out, transform 5s ease-out;
+}
+
+.wrapper.showWrapper {
+    opacity: 1;
+    transform: scale(1);
+}
+
 /* RESPONSIVENESS */
 
 @media (max-width: 2468px) {

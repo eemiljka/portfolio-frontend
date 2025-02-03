@@ -1,3 +1,18 @@
+<script lang="ts">
+import { onMount } from "svelte";
+
+onMount(() => {
+    setTimeout(() => {
+        const wrapper = document.querySelector(".wrapper");
+        if (wrapper) {
+            wrapper.classList.add("showWrapper");
+        }
+    }, 500);
+});
+
+
+</script>
+
 <div class="body">
     <div class="top">
         <div class="namepart">
@@ -13,6 +28,7 @@
         </ul>
     </div>
 
+
     <div class="wrapper">
         <div class="item item1">TypeScript</div>
         <div class="item item2">React</div>
@@ -23,5 +39,6 @@
         <div class="item item7">Next.js</div>
         <div class="item item8">SvelteKit</div>
     </div>
+
 
 </div>
