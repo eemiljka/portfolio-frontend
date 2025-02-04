@@ -26,7 +26,7 @@
 
 body {
     /* Creating a radial gradient background */
-    background: radial-gradient(circle, #7d3232, #1436a5cd);
+    background: radial-gradient(circle, #7d3232, #0d236dcd);
     background-repeat: no-repeat;
     background-size: cover;
     height: 300vh;

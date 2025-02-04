@@ -5,7 +5,8 @@
 </script>
 
 <div class="global-background">
-	<Particles className="absolute inset-0 z-[-1] pointer-events-none" quantity={300} color='#ffffff' />
+	<!--Setting a pinkISH, greyISH, whiteISH color for the background particles-->
+	<Particles className="absolute inset-0 z-[-1] pointer-events-none" quantity={1500} color='#b39a9f' /> 
 </div>
 
 <div class="content">

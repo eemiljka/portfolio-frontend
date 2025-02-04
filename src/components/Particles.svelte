@@ -67,7 +67,7 @@
       if (canvasContainerRef && canvasRef && context) {
         circles.length = 0;
         canvasSize.w = canvasContainerRef.offsetWidth;
-        canvasSize.h = canvasContainerRef.offsetHeight;
+        canvasSize.h = Math.max(document.body.scrollHeight, window.innerHeight);
         canvasRef.width = canvasSize.w * dpr;
         canvasRef.height = canvasSize.h * dpr;
         canvasRef.style.width = `${canvasSize.w}px`;
