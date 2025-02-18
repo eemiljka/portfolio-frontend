@@ -82,49 +82,20 @@
     <div class="horizontal-line2"></div>
 
     <div class="projects">
-        <div class="project">
-            <h3>Project 1 | Short Description of Project 1</h3>
-            <div class="project-one">
-                <div id="project-one-text">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis voluptates quis nisi ipsa illo in aliquid esse enim qui optio. Id minus error sequi neque assumenda animi quas dolor praesentium.</p>
-                </div>
-                <img class="project-image" src="https://placehold.co/600x400" alt="placeholder">
-            </div>
-        </div>
-        <div class="project">
-            <h3>Project 2 | Short Description of Project</h3>
-            <div class="project-one">
-                <div id="project-one-text">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis voluptates quis nisi ipsa illo in aliquid esse enim qui optio. Id minus error sequi neque assumenda animi quas dolor praesentium.</p>
-                </div>
-                <img class="project-image" src="https://placehold.co/600x400" alt="placeholder">
-            </div>
-        </div>
-        <div class="project">
-            <h3>Project 3 | Short Description of Project</h3>
-            <div class="project-one">
-                <div id="project-one-text">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis voluptates quis nisi ipsa illo in aliquid esse enim qui optio. Id minus error sequi neque assumenda animi quas dolor praesentium.</p>
-                </div>
-                <img class="project-image" src="https://placehold.co/600x400" alt="placeholder">
-            </div>
-        </div>
-        <div class="project">
-            <h3>Project 4 | Short Description of Project</h3>
-            <div class="project-one">
-                <div id="project-one-text">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis voluptates quis nisi ipsa illo in aliquid esse enim qui optio. Id minus error sequi neque assumenda animi quas dolor praesentium.</p>
-                </div>
-                <img class="project-image" src="https://placehold.co/600x400" alt="placeholder">
-            </div>
-        </div>
-        <!-- First supabase query test -->
-        <div class="project">
-            <h3>TEST | Short Description of Project</h3>
+        <!-- Iterating over the database data and reading all the projects in order -->
+        
+        
             {#each data.projects as project}
-            <li>{project.project_name}</li>
-            {/each}
+            <div class="project">
+            <h3>{project.project_name}</h3>
+            <div class="project-one">
+                <div id="project-one-text">
+                    <p>{project.project_description}</p>
+                </div>
+                <img class="project-image" src="https://placehold.co/600x400" alt="placeholder">
+            </div>
         </div>
+        {/each}
     </div>
 </blockquote>
 </div>
