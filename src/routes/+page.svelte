@@ -3,7 +3,9 @@
     import { observeProjects } from "$lib/utils";
     import {animate, delay } from "motion";
 	import { fade } from "svelte/transition";
-	
+
+    // define data properties
+    let {data} = $props();
 
     // Animations
     onMount(() => {
@@ -115,6 +117,13 @@
                 </div>
                 <img class="project-image" src="https://placehold.co/600x400" alt="placeholder">
             </div>
+        </div>
+        <!-- First supabase query test -->
+        <div class="project">
+            <h3>TEST | Short Description of Project</h3>
+            {#each data.projects as project}
+            <li>{project.project_name}</li>
+            {/each}
         </div>
     </div>
 </blockquote>
