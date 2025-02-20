@@ -4,8 +4,10 @@
     import {animate, delay } from "motion";
 	import { fade } from "svelte/transition";
 
-    // define data properties
-    let {data} = $props();
+    // get data from SvelteKit load function
+    export let data;
+
+    let projects = data?.projects ?? [];
 
     // Animations
     onMount(() => {
@@ -83,9 +85,7 @@
 
     <div class="projects">
         <!-- Iterating over the database data and reading all the projects in order -->
-        
-        
-            {#each data.projects as project}
+            {#each projects as project}
             <div class="project">
             <h3>{project.project_name}</h3>
             <div class="project-one">

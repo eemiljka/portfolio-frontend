@@ -6,7 +6,7 @@
 
 <div class="global-background">
 	<!--Setting a pinkISH, greyISH, whiteISH color for the background particles-->
-	<Particles className="absolute inset-0 z-[-1] pointer-events-none" quantity={1500} color='#b39a9f' /> 
+	<Particles className="absolute inset-0 z-[-1] pointer-events-none" quantity={800} color='#b39a9f' /> 
 </div>
 
 <div class="content">
