@@ -34,9 +34,6 @@
         animate("#list-item-one", {opacity: [0, 1], y: [-20, 0] }, {duration: 1.5, delay: 1.5})
     })
 
-    onMount(() => {
-        animate("#list-item-two", {opacity: [0, 1], y: [-20, 0] }, {duration: 1.5, delay: 1.25})
-    })
 
     onMount(() => {
         animate("#projectstitle", {opacity: [0, 1], y: [-20, 0] }, {duration: 1.5, delay: 1.75})
@@ -67,7 +64,6 @@
 
 
         <ul class="top-child">
-            <li id="list-item-two"><button type="button" on:click={toggleFade}><a href="/skills-and-experience">SKILLS & EXPERIENCE</a></button></li>
             <li id="list-item-one"><button type="button" on:click={toggleFade}><a href="/about">ABOUT ME</a></button></li>
         </ul>
 
