@@ -13,8 +13,22 @@ onMount(() => {
 });
 
 onMount(() => {
-    animate("#tech-stack", {opacity: [0, 1], y: [-20, 0]}, {duration: 1.5})
+    animate('.intro', {opacity: [0, 1], y: [-20, 0]}, {duration: 1.5})
 })
+
+onMount(() => {
+    animate('.intro-text', {opacity: [0, 1], y: [-20, 0]}, {duration: 1.5, delay: 1.5})
+})
+
+onMount(() => {
+    animate("#tech-stack", {opacity: [0, 1], y: [-20, 0]}, {duration: 1.5, delay: 2.25})
+})
+
+onMount(() => {
+    animate(".wrapper", {opacity: [0, 1], y: [-20, 0]}, {duration: 1.5, delay: 2})
+})
+
+
 
 let showFade = false;
 
@@ -40,9 +54,21 @@ function toggleFade() {
     </div>
 
     <blockquote transition:fade={{delay: 100, duration: 100}}>
+        <div class="intro-container" style="position: relative; text-align: center;">
+        <div class="horizontal-line-intro"></div>
+        <div class="intro">
+            <h2 id="intro-title">INTRODUCTION</h2>
+        </div>
+            <p class="intro-text">
+                I am an aspiring full-stack developer from Finland. 
+                I have a passion for creating functional web applications with various technologies. 
+                I am currently studying Information and Communication Technology at 
+                Metropolia University of Applied Sciences. 
+            </p>
 
-    <div class="my-tech-stack">
-        <h1 id="tech-stack">MY TECH STACK</h1>
+    <div class="my-tech-stack" style="position: relative; text-align: center;">
+        <h2 id="tech-stack">MY TECH STACK</h2>
+        <div class="horizontal-line-stack"></div>
     </div>
 
     <div class="wrapper">

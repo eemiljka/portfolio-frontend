@@ -86,7 +86,7 @@
             <h3>{project.project_name}</h3>
             <div class="project-one">
                 <div id="project-one-text">
-                    <p>{project.project_description}</p>
+                    <p class="project-text">{project.project_description}</p>
                 </div>
                 <img class="project-image" src="https://placehold.co/600x400" alt="placeholder">
             </div>
