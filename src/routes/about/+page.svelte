@@ -40,6 +40,8 @@ function toggleFade() {
 </script>
 
 <div class="body">
+    <div class="top-container" style="position: relative; text-align: center;">
+    <div class="horizontal-line-top"></div>
     <div class="top">
         <div class="namepart">
             <h1 id="firstname"><button type="button" on:click={toggleFade}><a href="/">EEMIL</a></button></h1>
@@ -51,6 +53,7 @@ function toggleFade() {
         <ul class="top-child">
             <li id="list-item-one"><button type="button" on:click={toggleFade}><a href="/about">ABOUT ME</a></button></li>
         </ul>
+    </div>
     </div>
 
     <blockquote transition:fade={{delay: 100, duration: 100}}>

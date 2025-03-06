@@ -53,6 +53,8 @@
     
 </script>
 <div class="body">
+    <div class="top-container" style="position: relative; text-align: center;"></div>
+    <div class="home-top-line"></div>
     <div class="top">
         <div class="namepart">
             <h1 id="firstname"><a href="/">EEMIL</a></h1>
@@ -68,6 +70,7 @@
         </ul>
 
     </div>
+
 
 
     <blockquote transition:fade={{delay: 250, duration: 300}}>
