@@ -86,12 +86,12 @@
         <!-- Iterating over the database data and reading all the projects in order -->
             {#each projects as project}
             <div class="project">
-            <h3>{project.project_name}</h3>
+            <h3><a href={project.project_link}>{project.project_name}</a></h3>
             <div class="project-one">
                 <div id="project-one-text">
                     <p class="project-text">{project.project_description}</p>
                 </div>
-                <img class="project-image" src="https://placehold.co/600x400" alt="placeholder">
+                <img class="project-image" src={project.image_path} alt="project">
             </div>
         </div>
         {/each}

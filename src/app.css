@@ -18,6 +18,8 @@
 }
 
 .body {
+    -webkit-font-smoothing: antialiazed;
+    -moz-osx-font-smoothing: grayscale;
     width: 65vw;
     margin-left: auto;
     margin-right: auto;
@@ -26,7 +28,7 @@
 
 body {
     /* Creating a radial gradient background */
-    background: radial-gradient(circle, #7d3232, #0d236dcd);
+    background: radial-gradient(circle, #8c4b4b, #4562c4cd);
     background-repeat: no-repeat;
     background-size: cover;
     height: 200vh;
@@ -98,7 +100,7 @@ li {
     position: absolute;
     left: 21.5%;
     top: 200px;
-    width: 1px;
+    width: 2px;
     height: 10%;
     background-color: white;
     z-index: -1;
@@ -110,7 +112,7 @@ li {
     position: absolute;
     left: 25.3%;
     top: 420px;
-    width: 1px;
+    width: 2px;
     height: 133%;
     background-color: white;
     z-index: -1;
@@ -122,7 +124,7 @@ li {
     left: 25.3%;
     top: 597px;
     width: 50px;
-    height: 1px;
+    height: 2px;
     background-color: white;
     z-index: -1;
     animation: appear 6s ease-in-out;
@@ -136,7 +138,7 @@ li {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: 1px;
+    height: 2px;
     background-color: white;
     z-index: -1;
     animation: appear 1.5s ease-in-out;
@@ -148,7 +150,7 @@ li {
     left: 50%;
     transform: translateX(-50%);
     width: 200%;
-    height: 1px;
+    height: 2px;
     background-color: white;
     z-index: -1;
 }
@@ -159,7 +161,7 @@ li {
     left: 50%;
     transform: translateX(-50%);
     width: 66%;
-    height: 1px;
+    height: 2px;
     background-color: white;
     z-index: -1;
     opacity: 0;
@@ -174,7 +176,7 @@ li {
     left: 50%;
     transform: translateX(-50%);
     width: 33%;
-    height: 1px;
+    height: 2px;
     background-color: white;
     z-index: -1;
     opacity: 0;
@@ -213,7 +215,7 @@ li {
 }
 
 h3 {
-    font-size: large;
+    font-size: x-large;
     color: white;
     padding: 100px 0px 10px 100px;
 }
@@ -229,25 +231,32 @@ h4 {
     color: white;
     padding: 50px;
     padding-right: 200px;
-    width: 150%;
+    width: 200%;
+    line-height: 1.5;
 }
 
 .project-image {
-    padding: 50px 50px;
+    border-radius: 16px;
+    max-width: 500px;
+    max-height: 300px;
+
 }
 
 
 
 .project-one {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
-    padding-left: 100px;
+    gap: 300px;
+    padding-left: 50px;
 }
 
 .project {
     opacity: 0;
     transform: scale(0.9);
     transition: opacity 1s ease-out, transform 5s ease-out;
+    margin-bottom: 200px;
 }
 
 .projects {
@@ -280,7 +289,7 @@ h4 {
 
 #tech-stack {
     color: white;
-    font-size: x-large;
+    font-size: x-large; 
 }
 
 

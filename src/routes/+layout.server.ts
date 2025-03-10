@@ -34,18 +34,44 @@ export async function load({ url, cookies }) {
   }
 
   // fetch projects AFTER ensuring the token is stored correctly
+  //TODO: fetch project images
   const { data: projects, error: projectsError } = await supabase
     .from("projects")
     .select();
 
-  if (projectsError) {
-    console.error("Error fetching projects:", projectsError);
-  }
+  /*const {data: projectImages, error: imagesError} = await supabase
+  .storage.from("project-images").list("images", {
+    limit: 100,
+    offset: 0,
+    sortBy: {column: 'name', order: 'asc'}
+  })*/
 
-  console.log("Projects Loaded:", projects);
+    // Map over projects to add individual image URLs
+let projectsWithImages = [];
+if (projects) {
+  projectsWithImages = await Promise.all(
+    projects.map(async (project) => {
+      // Assuming each project has an `image_path` field
+      const { data: imageData, error: imageError } = await supabase
+        .storage
+        .from("project-images")
+        .getPublicUrl(project.image_path);
+
+      if (imageError) {
+        console.error("Error fetching image for project", project, imageError);
+        project.imageUrl = ""; // fallback if error
+      } else {
+        project.imageUrl = imageData.publicUrl;
+      }
+      return project;
+    })
+  );
+}
+
+  console.log("Projects Loaded:", projectsWithImages);
 
   return {
-    projects: projects ?? [],
+    projects: projectsWithImages,
     authorized: true
   };
 }
