@@ -31,7 +31,7 @@ body {
     background: radial-gradient(circle, #8c4b4b, #4562c4cd);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200vh;
+    height: 180vh;
     margin: 0;
     
     
@@ -105,6 +105,11 @@ li {
     background-color: white;
     z-index: -1;
     animation: appear 3s ease-in-out;
+    mask-image: linear-gradient(to bottom,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%);
 
 }
 
@@ -113,10 +118,16 @@ li {
     left: 25.3%;
     top: 420px;
     width: 2px;
-    height: 133%;
+    height: 120%;
+    /*background: linear-gradient(to bottom, white 50%, white 70%, transparent 100%);*/
     background-color: white;
     z-index: -1;
     animation: appear 3.5s ease-in-out;
+    mask-image: linear-gradient(to bottom,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%);
 }
 
 .horizontal-line2 {
@@ -128,6 +139,11 @@ li {
     background-color: white;
     z-index: -1;
     animation: appear 6s ease-in-out;
+    mask-image: linear-gradient(to right,
+    transparent 0%,
+    black 0%,
+    black 50%,
+    transparent 100%);
 }
 
 /*About me page lines*/
@@ -167,6 +183,11 @@ li {
     opacity: 0;
     animation: appear 1.5s ease-in-out forwards;
     animation-delay: 1.5s;
+    mask-image: linear-gradient(to right,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%);
 }
 
 /*About me page lines*/
@@ -182,6 +203,11 @@ li {
     opacity: 0;
     animation: appear 1.5s ease-in-out forwards;
     animation-delay: 3s;
+    mask-image: linear-gradient(to right,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%);
 }
 
 .intro {

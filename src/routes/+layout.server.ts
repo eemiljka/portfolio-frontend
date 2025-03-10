@@ -68,8 +68,6 @@ if (projects) {
   );
 }
 
-  console.log("Projects Loaded:", projectsWithImages);
-
   return {
     projects: projectsWithImages,
     authorized: true
