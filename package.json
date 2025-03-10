@@ -1,5 +1,6 @@
 {
 	"name": "portfolio-frontend",
+	"homepage": "https://eemiljka.github.io/portfolio-frontend",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
@@ -44,6 +45,7 @@
 		"@supabase/supabase-js": "^2.48.1",
 		"dotenv": "^16.4.7",
 		"framer-motion": "^12.0.6",
+		"gh-pages": "^6.3.0",
 		"motion": "^12.0.6",
 		"svelte-transition": "^0.0.17"
 	}
