@@ -63,10 +63,7 @@ function toggleFade() {
             <h2 id="intro-title">INTRODUCTION</h2>
         </div>
             <p class="intro-text">
-                I am an aspiring full-stack developer from Finland. 
-                I have a passion for creating functional web applications with various technologies. 
-                I am currently studying Information and Communication Technology at 
-                Metropolia University of Applied Sciences. 
+                I am a third year ICT student, majoring in Web Development and Digital Media, passionate in developing reliable full-stack software. Enthusiasm to make a difference with my work by improving society with new concepts and growing with acquired skills.
             </p>
 
     <div class="my-tech-stack" style="position: relative; text-align: center;">
@@ -83,6 +80,8 @@ function toggleFade() {
         <div class="item item6">NoSQL</div>
         <div class="item item7">Next.js</div>
         <div class="item item8">SvelteKit</div>
+        <div class="item item9">Git</div>
+        <div class="item item10">Python</div>
     </div>
 
 </blockquote>
