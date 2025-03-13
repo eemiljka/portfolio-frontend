@@ -70,6 +70,7 @@
         </ul>
 
     </div>
+    <div class="content">
 
 
 
@@ -97,5 +98,6 @@
         {/each}
     </div>
 </blockquote>
+</div>
 </div>
 

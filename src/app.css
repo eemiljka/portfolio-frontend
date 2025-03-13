@@ -226,7 +226,7 @@ li {
     z-index: -1;
     opacity: 0;
     animation: appear 1.5s ease-in-out forwards;
-    animation-delay: 3s;
+    animation-delay: 3.5s;
     mask-image: linear-gradient(to right,
     transparent 0%,
     black 20%,
@@ -358,6 +358,12 @@ h4 {
 
 /* RESPONSIVENESS */
 
+@media (max-width: 3840px) {
+    .project-text {
+        padding-right: 300px;
+    }
+}
+
 @media (max-width: 2468px) {
     .vertical-line3 {
         left: 33.5%;
@@ -370,6 +376,54 @@ h4 {
 @media (max-width: 2400px) {
     .horizontal-line3 {
         left: 34.2%;
+    }
+}
+
+@media (max-width: 2170px) {
+    .project-text {
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 1920px) {
+    .project-text {
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 1894px) {
+    .project-image {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 1716px) {
+    .project-image {
+        max-width: 370px;
+    }
+}
+
+@media (max-width: 1708px) {
+    .project-text {
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 1628px) {
+    .project-text {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1576px) {
+    .project-image {
+        max-width: 370px;
+    }
+}
+
+@media (max-width: 1540px) {
+    .project-text {
+        padding-right: 10px;
     }
 }
 
