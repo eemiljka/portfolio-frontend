@@ -32,6 +32,33 @@ onMount(() => {
     animate("#certificates-title", {opacity: [0, 1], y: [-20, 0]}, {duration: 1.5, delay: 2.75})
 })
 
+onMount(() => {
+    animate(".certificate-wrapper", {opacity: [0, 1], y: [-20, 0]}, {duration: 1.5, delay: 3})
+})
+
+onMount(() => {
+    animate("#firstname", {opacity: 1})
+})
+
+onMount(() => {
+    animate("#middlename", {opacity: 1})
+})
+
+onMount(() => {
+    animate("#lastname", {opacity: 1})
+})
+
+onMount(() => {
+    animate("#at", {opacity: 1})
+})
+
+onMount(() => {
+    animate("#tilde", {opacity: 1})
+})
+
+onMount(() => {
+    animate("#list-item-one", {opacity: 1})
+})
 
 
 let showFade = false;

@@ -78,6 +78,7 @@ body {
 }
 
 h1 {
+    opacity: 0;
     font-size: xx-large;
     color: white;
 }
@@ -89,6 +90,10 @@ ul {
 li {
     font-size: xx-large;
     color: white;
+}
+
+#list-item-one {
+    opacity: 0;
 }
 
 #list-item-two {
@@ -239,7 +244,7 @@ li {
     color: white;
     display: flex;
     justify-content: center;
-    padding-bottom: 150px;
+    padding-bottom: 25px;
     padding-top: 25px;
 }
 
@@ -254,6 +259,7 @@ li {
 
 
 #projectstitle {
+    opacity: 0;
     font-size: x-large;
     color: white;
     padding: 100px 100px;
@@ -560,10 +566,10 @@ h4 {
 
 @keyframes scrollright {
     from {
-        left: -300px;
+        left: -533px;
     }
     to {
-        left: calc(300px * 3);
+        left: calc(533px * 3);
     }
 }
 
@@ -586,12 +592,12 @@ h4 {
 }
 
 .cert {
-    width: 300px;
+    width: 533px;
     height: 100px;
     background-color: transparent;
     border-radius: 8px;
     position: absolute;
-    left: calc(300px * 3);
+    left: calc(533px * 3);
     display: flex;
     justify-content: center;
     color: white;
