@@ -210,6 +210,25 @@ li {
     transparent 100%);
 }
 
+.horizontal-line-certificates {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 33%;
+    height: 2px;
+    background-color: white;
+    z-index: -1;
+    opacity: 0;
+    animation: appear 1.5s ease-in-out forwards;
+    animation-delay: 3s;
+    mask-image: linear-gradient(to right,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%);
+}
+
 .intro {
     margin: auto;
     margin-top: 50px;
@@ -317,6 +336,17 @@ h4 {
     color: white;
     font-size: x-large; 
 }
+
+.certificates {
+    margin-top: 100px;
+}
+
+#certificates-title {
+    color: white;
+    font-size: x-large;
+
+}
+
 
 
 
@@ -503,9 +533,37 @@ h4 {
     margin: auto;
 }
 
+.certificate-wrapper {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 20%,
+    rgba(0,0,0,1)80%,
+    rgba(0,0,0,0));
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
 @keyframes scrolleft {
     to {
         left: -200px;
+    }
+}
+
+@keyframes scrollright {
+    from {
+        left: -300px;
+    }
+    to {
+        left: calc(300px * 3);
     }
 }
 
@@ -515,13 +573,31 @@ h4 {
     background-color: transparent;
     border-radius: 8px;
     position: absolute;
-    left: calc(200px * 8);
+    left: calc(200px * 10);
     display: flex;
     justify-content: center;
     color: white;
     font-size: large;
     font-weight: bold;
     animation-name: scrolleft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.cert {
+    width: 300px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 8px;
+    position: absolute;
+    left: calc(300px * 3);
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    animation-name: scrollright;
     animation-duration: 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -565,4 +641,16 @@ h4 {
 
 .item10 {
     animation-delay: calc(30s / 10 * (10 - 10) * -1);
+}
+
+.item-one {
+    animation-delay: calc(30s / 3 * (3 - 1) * -1);
+}
+
+.item-two {
+    animation-delay: calc(30s / 3 * (3 - 2) * -1);
+}
+
+.item-three {
+    animation-delay: calc(30s / 3 * (3 - 3) * -1);
 }

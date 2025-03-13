@@ -28,6 +28,10 @@ onMount(() => {
     animate(".wrapper", {opacity: [0, 1], y: [-20, 0]}, {duration: 1.5, delay: 2})
 })
 
+onMount(() => {
+    animate("#certificates-title", {opacity: [0, 1], y: [-20, 0]}, {duration: 1.5, delay: 2.75})
+})
+
 
 
 let showFade = false;
@@ -60,14 +64,14 @@ function toggleFade() {
         <div class="intro-container" style="position: relative; text-align: center;">
         <div class="horizontal-line-intro"></div>
         <div class="intro">
-            <h2 id="intro-title">INTRODUCTION</h2>
+            <h2 id="intro-title">SUMMARY</h2>
         </div>
             <p class="intro-text">
-                I am a third year ICT student, majoring in Web Development and Digital Media, passionate in developing reliable full-stack software. Enthusiasm to make a difference with my work by improving society with new concepts and growing with acquired skills.
+                I am a third year ICT student, majoring in Web Development and Digital Media, passionate about developing reliable full-stack software. Enthusiasm to make a difference with my work by improving society with new concepts and growing with acquired skills.
             </p>
 
     <div class="my-tech-stack" style="position: relative; text-align: center;">
-        <h2 id="tech-stack">MY TECH STACK</h2>
+        <h2 id="tech-stack">SKILLS</h2>
         <div class="horizontal-line-stack"></div>
     </div>
 
@@ -82,6 +86,17 @@ function toggleFade() {
         <div class="item item8">SvelteKit</div>
         <div class="item item9">Git</div>
         <div class="item item10">Python</div>
+    </div>
+
+    <div class="certificates" style="position: relative; text-align: center;">
+        <h2 id="certificates-title">CERTIFICATES</h2>
+        <div class="horizontal-line-certificates"></div>
+    </div>
+
+    <div class="certificate-wrapper">
+        <div class="cert item-one">AWS Academy Graduate</div>
+        <div class="cert item-two">CISCO Networking Essentials</div>
+        <div class="cert item-three">Nokia Innovation Garage Project Team Member</div>
     </div>
 
 </blockquote>
