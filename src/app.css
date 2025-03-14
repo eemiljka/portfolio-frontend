@@ -58,7 +58,7 @@ h3 {
 }
 
 .project:hover h3 {
-    color: black;
+    color: rgba(255, 189, 47, 0.822);
     font-style: italic;
 }
 
@@ -68,7 +68,7 @@ h3 {
 
 .project-section:hover {
     transform: scale(1.03);
-    box-shadow: 0 8px 16px -16px rgba(0, 0, 0, 0.313);
+    box-shadow: 0 4px 16px -16px rgba(0, 0, 0, 0.493);
     z-index: 10;
 }
 
@@ -77,7 +77,7 @@ h3 {
 }
 
 .namepart:hover a {
-    color: black;
+    color: rgba(255, 189, 47, 0.822);
     font-style: italic;
   }
 
@@ -136,7 +136,7 @@ li {
 }
 
 #list-item-one:hover a {
-    color: black;
+    color: rgba(255, 189, 47, 0.822);
     font-style: italic;
   }
 
@@ -285,13 +285,18 @@ li {
     margin-top: 50px;
 }
 
+.intro-section1:hover #intro-title {
+    color: rgba(255, 189, 47, 0.822);
+    font-style: italic;
+}
+
 .intro-section1 {
     transition: 0.75s;
 }
 
 .intro-section1:hover {
     transform: scale(1.03);
-    box-shadow: 0 8px 16px -16px rgba(0, 0, 0, 0.313);
+    box-shadow: 0 4px 16px -16px rgba(0, 0, 0, 0.493);
     z-index: 10;
 }
 
@@ -311,6 +316,7 @@ li {
  justify-content: center;
  font-size: x-large;
  color: white;
+ transition: 0.75s;
 }
 
 
@@ -394,6 +400,21 @@ h4 {
     justify-content: center;
 }
 
+.skills-container {
+    transition: 0.75s;
+}
+
+.skills-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 16px -16px rgba(0, 0, 0, 0.493);
+    z-index: 10;
+}
+
+.skills-container:hover #tech-stack {
+    color: rgba(255, 189, 47, 0.822);
+    font-style: italic;
+}
+
 #tech-stack {
     color: white;
     font-size: x-large; 
@@ -407,6 +428,21 @@ h4 {
     color: white;
     font-size: x-large;
 
+}
+
+.certificate-section {
+    transition: 0.75s;
+}
+
+.certificate-section:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 16px -16px rgba(0, 0, 0, 0.493);
+    z-index: 10;
+}
+
+.certificate-section:hover #certificates-title {
+    color: rgba(255, 189, 47, 0.822);
+    font-style: italic;
 }
 
 

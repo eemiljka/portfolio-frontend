@@ -96,7 +96,7 @@ function toggleFade() {
         </div>
             <p class="intro-text">
                 I am a third year ICT student, majoring in Web Development and Digital Media, 
-                passionate about developing reliable full-stack software. Enthusiasm to make a 
+                passionate about developing reliable full-stack software. I have enthusiasm to make a 
                 difference with my work by improving society with new concepts and growing with acquired skills.
             </p>
             <p class="intro-text">
@@ -108,8 +108,14 @@ function toggleFade() {
                 Multi Channel Publishing, Server Side Programming and Data Communications.
             </p>
 
+            <p class="intro-text">During these courses, we have made mainly web based applications,  
+                from social media type apps, to 3D modeling on the browser. These school projects have inspired
+                me to apply these skills to hobby projects, as well as meaningful real life solutions.
+            </p>
+
         </div>
 
+        <div class="skills-container">
     <div class="my-tech-stack" style="position: relative; text-align: center;">
         <h2 id="tech-stack">SKILLS</h2>
         <div class="horizontal-line-stack"></div>
@@ -127,7 +133,9 @@ function toggleFade() {
         <div class="item item9">Git</div>
         <div class="item item10">Python</div>
     </div>
+</div>
 
+<div class="certificate-section">
     <div class="certificates" style="position: relative; text-align: center;">
         <h2 id="certificates-title">CERTIFICATES</h2>
         <div class="horizontal-line-certificates"></div>
@@ -138,6 +146,8 @@ function toggleFade() {
         <div class="cert item-two">CISCO Networking Essentials</div>
         <div class="cert item-three">Nokia Innovation Garage Project Team Member</div>
     </div>
+    </div>
+</div>
 
 </blockquote>
 
