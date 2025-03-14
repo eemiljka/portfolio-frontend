@@ -50,7 +50,6 @@
         showFade = !showFade;
     }
     
-    
 </script>
 <div class="body">
     <div class="top-container" style="position: relative; text-align: center;"></div>

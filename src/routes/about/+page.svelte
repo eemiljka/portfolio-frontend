@@ -94,7 +94,17 @@ function toggleFade() {
             <h2 id="intro-title">SUMMARY</h2>
         </div>
             <p class="intro-text">
-                I am a third year ICT student, majoring in Web Development and Digital Media, passionate about developing reliable full-stack software. Enthusiasm to make a difference with my work by improving society with new concepts and growing with acquired skills.
+                I am a third year ICT student, majoring in Web Development and Digital Media, 
+                passionate about developing reliable full-stack software. Enthusiasm to make a 
+                difference with my work by improving society with new concepts and growing with acquired skills.
+            </p>
+            <p class="intro-text">
+                I have acquired the foundation for application development at Metropolia University of 
+                Applied Sciences. My first year of studies centered around Python and after that I have 
+                built full-sized projects, mainly focusing on TypeScript, React and JavaScript. During my major, 
+                Web Development and Digital Media, I have honed my skills in the most common web development 
+                technologies through courses like: User-centric Application Development, Hybrid Applications, 
+                Multi Channel Publishing, Server Side Programming and Data Communications.
             </p>
 
     <div class="my-tech-stack" style="position: relative; text-align: center;">

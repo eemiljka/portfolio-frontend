@@ -46,7 +46,6 @@ body {
 .top-child {
     margin: 0; 
     list-style: none; 
-    display: flex; 
     gap: 1rem; 
 }
 
@@ -54,6 +53,32 @@ body {
     display: flex;
 }
 
+h3 {
+    transition: 0.75s
+}
+
+.project:hover h3 {
+    color: black;
+    font-style: italic;
+}
+
+.namepart a {
+    transition: 0.75s;
+}
+
+.namepart:hover a {
+    color: black;
+    font-style: italic;
+  }
+
+  /*.body:has(.top:hover) .home-top-line {
+    background-color: black;
+  }
+
+.body:has(.top:hover) .horizontal-line-top {
+    background-color: black;
+}
+*/
 #firstname {
     padding: 100px 8px 100px 0px
 }
@@ -95,6 +120,15 @@ li {
 #list-item-one {
     opacity: 0;
 }
+
+#list-item-one a {
+    transition: 0.75s;
+}
+
+#list-item-one:hover a {
+    color: black;
+    font-style: italic;
+  }
 
 #list-item-two {
     padding-right: 75px;
@@ -163,6 +197,7 @@ li {
     background-color: white;
     z-index: -1;
     animation: appear 1.5s ease-in-out;
+    transition: 0.3s;
 }
 
 .horizontal-line-top {
@@ -174,6 +209,7 @@ li {
     height: 2px;
     background-color: white;
     z-index: -1;
+    transition: 0.3s;
 }
 
 .horizontal-line-intro {
