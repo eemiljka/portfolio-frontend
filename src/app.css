@@ -62,6 +62,16 @@ h3 {
     font-style: italic;
 }
 
+.project-section {
+    transition: 0.75s;
+}
+
+.project-section:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px -16px rgba(0, 0, 0, 0.313);
+    z-index: 10;
+}
+
 .namepart a {
     transition: 0.75s;
 }
@@ -273,6 +283,16 @@ li {
 .intro {
     margin: auto;
     margin-top: 50px;
+}
+
+.intro-section1 {
+    transition: 0.75s;
+}
+
+.intro-section1:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px -16px rgba(0, 0, 0, 0.313);
+    z-index: 10;
 }
 
 .intro-text {

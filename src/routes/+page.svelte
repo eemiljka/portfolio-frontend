@@ -86,12 +86,14 @@
         <!-- Iterating over the database data and reading all the projects in order -->
             {#each projects as project}
             <div class="project">
+                <div class="project-section">
             <h3><a href={project.project_link}>{project.project_name}</a></h3>
             <div class="project-one">
                 <div id="project-one-text">
                     <p class="project-text">{project.project_description}</p>
                 </div>
                 <img class="project-image" src={project.image_path} alt="project">
+            </div>
             </div>
         </div>
         {/each}

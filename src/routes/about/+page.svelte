@@ -89,6 +89,7 @@ function toggleFade() {
 
     <blockquote transition:fade={{delay: 100, duration: 100}}>
         <div class="intro-container" style="position: relative; text-align: center;">
+            <div class="intro-section1">
         <div class="horizontal-line-intro"></div>
         <div class="intro">
             <h2 id="intro-title">SUMMARY</h2>
@@ -106,6 +107,8 @@ function toggleFade() {
                 technologies through courses like: User-centric Application Development, Hybrid Applications, 
                 Multi Channel Publishing, Server Side Programming and Data Communications.
             </p>
+
+        </div>
 
     <div class="my-tech-stack" style="position: relative; text-align: center;">
         <h2 id="tech-stack">SKILLS</h2>
